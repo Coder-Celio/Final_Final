@@ -1,0 +1,14 @@
+C:\ElevenFiftyProjects\Final\CustInfo.Data\bin\Debug\net7.0\CustInfo.Data.deps.json
+C:\ElevenFiftyProjects\Final\CustInfo.Data\bin\Debug\net7.0\CustInfo.Data.dll
+C:\ElevenFiftyProjects\Final\CustInfo.Data\bin\Debug\net7.0\CustInfo.Data.pdb
+C:\ElevenFiftyProjects\Final\CustInfo.Data\obj\Debug\net7.0\CustInfo.Data.csproj.AssemblyReference.cache
+C:\ElevenFiftyProjects\Final\CustInfo.Data\obj\Debug\net7.0\CustInfo.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\ElevenFiftyProjects\Final\CustInfo.Data\obj\Debug\net7.0\CustInfo.Data.AssemblyInfoInputs.cache
+C:\ElevenFiftyProjects\Final\CustInfo.Data\obj\Debug\net7.0\CustInfo.Data.AssemblyInfo.cs
+C:\ElevenFiftyProjects\Final\CustInfo.Data\obj\Debug\net7.0\CustInfo.Data.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\Final\CustInfo.Data\obj\Debug\net7.0\CustInfo.Data.dll
+C:\ElevenFiftyProjects\Final\CustInfo.Data\obj\Debug\net7.0\refint\CustInfo.Data.dll
+C:\ElevenFiftyProjects\Final\CustInfo.Data\obj\Debug\net7.0\CustInfo.Data.pdb
+C:\ElevenFiftyProjects\Final\CustInfo.Data\obj\Debug\net7.0\ref\CustInfo.Data.dll
+c:\ElevenFiftyProjects\Final\CustInfo.Data\bin\Debug\net7.0\CustInfo.Data.runtimeconfig.json
+c:\ElevenFiftyProjects\Final\CustInfo.Data\obj\Debug\net7.0\CustInfo.Data.genruntimeconfig.cache

@@ -1,0 +1,17 @@
+C:\ElevenFiftyProjects\Final\CustInfo.Services\bin\Debug\net7.0\CustInfo.Services.deps.json
+C:\ElevenFiftyProjects\Final\CustInfo.Services\bin\Debug\net7.0\CustInfo.Services.dll
+C:\ElevenFiftyProjects\Final\CustInfo.Services\bin\Debug\net7.0\CustInfo.Services.pdb
+C:\ElevenFiftyProjects\Final\CustInfo.Services\obj\Debug\net7.0\CustInfo.Services.csproj.AssemblyReference.cache
+C:\ElevenFiftyProjects\Final\CustInfo.Services\obj\Debug\net7.0\CustInfo.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\ElevenFiftyProjects\Final\CustInfo.Services\obj\Debug\net7.0\CustInfo.Services.AssemblyInfoInputs.cache
+C:\ElevenFiftyProjects\Final\CustInfo.Services\obj\Debug\net7.0\CustInfo.Services.AssemblyInfo.cs
+C:\ElevenFiftyProjects\Final\CustInfo.Services\obj\Debug\net7.0\CustInfo.Services.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\Final\CustInfo.Services\obj\Debug\net7.0\CustInfo.Services.dll
+C:\ElevenFiftyProjects\Final\CustInfo.Services\obj\Debug\net7.0\refint\CustInfo.Services.dll
+C:\ElevenFiftyProjects\Final\CustInfo.Services\obj\Debug\net7.0\CustInfo.Services.pdb
+C:\ElevenFiftyProjects\Final\CustInfo.Services\obj\Debug\net7.0\ref\CustInfo.Services.dll
+C:\ElevenFiftyProjects\Final\CustInfo.Services\bin\Debug\net7.0\CustInfo.Data.dll
+C:\ElevenFiftyProjects\Final\CustInfo.Services\bin\Debug\net7.0\CustInfo.Models.dll
+C:\ElevenFiftyProjects\Final\CustInfo.Services\bin\Debug\net7.0\CustInfo.Models.pdb
+C:\ElevenFiftyProjects\Final\CustInfo.Services\bin\Debug\net7.0\CustInfo.Data.pdb
+C:\ElevenFiftyProjects\Final\CustInfo.Services\obj\Debug\net7.0\CustInfo.Services.csproj.CopyComplete
