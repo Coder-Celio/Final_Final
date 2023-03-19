@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CustInfo.Models.UserModels
 {
-    public class UserLogIn
+    public class UserCreate
     {
         [Key]
         public int UserId {get; set;}
