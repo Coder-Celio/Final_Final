@@ -2,30 +2,84 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using CustInfo.Data.Context;
+using CustInfo.Data.Entities;
 using CustInfo.Models.VehicleModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace CustInfo.Services.VehicleServices
 {
     public class VehicleService : IVehicleService
     {
-        public Task<bool> CreateVehicle(VehicleCreate model)
+        private readonly ApplicationDbContext _context;
+        private IMapper _mapper;
+
+        public VehicleService(ApplicationDbContext context, IMapper mapper)
         {
-            throw new NotImplementedException();
+            _context = context;
+            _mapper = mapper;
         }
 
-        public Task<bool> EditVehicle(int id)
+        public async Task<bool> CreateVehicle(VehicleCreate model)
         {
-            throw new NotImplementedException();
+            var VehicleCreate = new VehicleEntity
+            {
+                VehicleId = model.VehicleId,
+                Year = model.Year,
+                Make = model.Make,
+                Model = model.Model
+            };
+            await _context.Vehicles.AddAsync(VehicleCreate);
+            await _context.SaveChangesAsync();
+            return true;
         }
 
-        public Task<VehicleDetail> GetVehicleDetailById(int id)
+        public async Task<bool> DeleteVehicle(int VehicleId)
         {
-            throw new NotImplementedException();
+            var VehicleEntity = await _context.Vehicles.FindAsync(VehicleId);
+            if (VehicleEntity != null){
+                _context.Vehicles.Remove(VehicleEntity);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+             else{
+                return false;
+            }
         }
 
-        public Task<List<VehicleList>> GetVehicleLists()
+        public async Task<bool> EditVehicle(VehicleEdit model)
         {
-            throw new NotImplementedException();
+            var VehicleEdit = await _context.Vehicles.FindAsync(model.VehicleId);
+            
+            if(VehicleEdit is null)
+                return false;
+            
+            VehicleEdit.VehicleId = model.VehicleId;
+            VehicleEdit.Year = model.Year;
+            VehicleEdit.Make = model.Make;
+            VehicleEdit.Model = model.Model;
+
+            return await _context.SaveChangesAsync() >0;
+        }
+
+        public async Task<VehicleDetail> GetVehicleDetailById(int VehicleId)
+        {
+            var VehicleDetail = await _context.Vehicles.FindAsync(VehicleId);
+            if(VehicleDetail == null)
+            return default;
+
+            return new VehicleDetail{
+                Year = VehicleDetail.Year,
+                Make = VehicleDetail.Make,
+                Model =VehicleDetail.Model
+            };
+        }
+
+        public async Task<List<VehicleList>> GetVehicleLists()
+        {
+            var conversion = await _context.Vehicles.ToListAsync();
+            return _mapper.Map<List<VehicleList>>(conversion);
         }
     }
 }

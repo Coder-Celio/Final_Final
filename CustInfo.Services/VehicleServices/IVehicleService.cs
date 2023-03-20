@@ -10,7 +10,8 @@ namespace CustInfo.Services.VehicleServices
     {
         Task<bool> CreateVehicle (VehicleCreate model);   
         Task<List<VehicleList>> GetVehicleLists();
-        Task<VehicleDetail> GetVehicleDetailById(int id);
-        Task<bool> EditVehicle(int id); 
+        Task<VehicleDetail> GetVehicleDetailById(int VehicleId);
+        Task<bool> EditVehicle(VehicleEdit model);
+        Task<bool> DeleteVehicle (int VehicleId); 
     }
 }
