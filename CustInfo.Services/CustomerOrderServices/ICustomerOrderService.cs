@@ -11,7 +11,7 @@ namespace CustInfo.Services.CustomerOrderServices
     {
         Task<bool> CreateCustomerOrderAsync(CustomerOrderCreate  model);
         Task<List<CustomerOrderListItem>> GetCustomerOrdersAsync();
-        Task<CustomerOrderDetail> GetCustomerOrderDetailByIdAsync(int id);
+        Task<CustomerOrderDetail> GetCustomerOrderDetailByIdAsync(int OrderId);
         Task<bool> EditCustomerOrderAsync(CustomerOrderEdit model);
         Task<bool> DeleteCustomerOrder(int id);
         

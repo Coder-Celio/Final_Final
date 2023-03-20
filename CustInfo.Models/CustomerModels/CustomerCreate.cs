@@ -11,6 +11,7 @@ namespace CustInfo.Models.CustomerModels
         [Key]
         public int CustomerId {get; set;}
         [Required]
+        [MaxLength(100, ErrorMessage = "Sorry, max input is 100 Characters")]
         public string FirstName {get; set;}=null!;
         [Required]
         public string LastName {get; set;}=null!;

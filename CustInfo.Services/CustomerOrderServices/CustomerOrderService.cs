@@ -2,39 +2,84 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using CustInfo.Data.Context;
+using CustInfo.Data.Entities;
 using CustInfo.Models.CustomerOrderModels;
-
+using Microsoft.EntityFrameworkCore;
 
 namespace CustInfo.Services.CustomerOrderServices
 {
     public class CustomerOrderService : ICustomerOrderService
     {
         private readonly ApplicationDbContext _context;
+        private IMapper _mapper;
 
-        public Task<bool> CreateCustomerOrderAsync(CustomerOrderCreate model)
+        public CustomerOrderService(ApplicationDbContext context, IMapper mapper)
         {
-            throw new NotImplementedException();
+            _context = context;
+            _mapper = mapper;
         }
 
-        public Task<bool> DeleteCustomerOrder(int id)
+        public async Task<bool> CreateCustomerOrderAsync(CustomerOrderCreate model)
         {
-            throw new NotImplementedException();
+            var customerOrderAsync= new CustomerOrderEntity{
+                CustomerOrderId = model.CustomerOrderId,
+                CustomerId = model.CustomerId,
+                VehicleId = model.VehicleId,
+            };
+            await _context.CustomerOrders.AddAsync(customerOrderAsync);
+            await _context.SaveChangesAsync();
+            return true;
         }
 
-        public Task<bool> EditCustomerOrderAsync(CustomerOrderEdit model)
+        public async Task<bool> DeleteCustomerOrder(int id)
         {
-            throw new NotImplementedException();
+            var customerOrderAsync = await _context.CustomerOrders.FindAsync(id);
+            if (customerOrderAsync != null)
+            {
+                _context.CustomerOrders.Remove(customerOrderAsync);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            else{
+                return false;
+            }
         }
 
-        public Task<CustomerOrderDetail> GetCustomerOrderDetailByIdAsync(int id)
+        public async Task<bool> EditCustomerOrderAsync(CustomerOrderEdit model)
         {
-            throw new NotImplementedException();
+            var customerOrderAsync = await _context.CustomerOrders.FindAsync(model.CustomerOrderId);
+
+            if (customerOrderAsync is null)
+                return false;
+
+            customerOrderAsync.CustomerOrderId = model.CustomerOrderId;
+            customerOrderAsync.CustomerId = model.CustomerId;
+            customerOrderAsync.VehicleId = model.VehicleId;
+            return await _context.SaveChangesAsync() >0;
+        }
+         
+
+        public async Task<CustomerOrderDetail> GetCustomerOrderDetailByIdAsync(int OrderId)
+        {
+            var customerOrderAsync = await _context.CustomerOrders.FindAsync(OrderId);
+
+            if(customerOrderAsync == null)
+            return default;
+
+            return new CustomerOrderDetail{
+                CustomerOrderId = customerOrderAsync.CustomerOrderId,
+                CustomerId = customerOrderAsync.CustomerId,
+                VehicleId = customerOrderAsync.VehicleId
+            };
+            
         }
 
-        public Task<List<CustomerOrderListItem>> GetCustomerOrdersAsync()
+        public async Task<List<CustomerOrderListItem>> GetCustomerOrdersAsync()
         {
-            throw new NotImplementedException();
+            var conversion = await _context.CustomerOrders.ToListAsync();
+            return _mapper.Map<List<CustomerOrderListItem>>(conversion);
         }
     }
 }

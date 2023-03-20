@@ -10,7 +10,8 @@ namespace CustInfo.Services.CustomerServices
     {
         Task<bool>CreateCustomer(CustomerCreate model);
         Task<List<CustomerList>> GetCustomers();
-        Task<CustomerDetail> GetCustomerDetailById(int id);
-        Task<bool> DeleteCustomer (int id);
+        Task<CustomerDetail> GetCustomerDetailById(int CustomerId);
+        Task<bool> EditCustomer(CustomerEdit model);
+        Task<bool> DeleteCustomer (int CustomerId);
     }
 }

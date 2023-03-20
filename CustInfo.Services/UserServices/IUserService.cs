@@ -10,7 +10,8 @@ namespace CustInfo.Services.UserServices
     {
         Task<bool> CreateUser(UserCreate model);
         Task<List<UserListItem>> GetUserListItems();
-        Task<UserDetail> GetUserDetailById(int id);
-        Task<bool> EditUser (int id);
+        Task<UserDetail> GetUserDetailById(int UserId);
+        Task<bool> EditUser (UserEdit model);
+        Task<bool> DeleteUser (int UserId);
     }
 }
