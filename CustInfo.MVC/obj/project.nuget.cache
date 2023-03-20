@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d/1XGNiwGCvafuX0UiPS1H/ceG6aqa9eG9z5kFkTf5WSk795ZnguXq/GuA7FaClpbeICvQ/OOuqyp2Fxs1FGYg==",
+  "dgSpecHash": "R6s3DQGmKWLNZn4yC9gO46fAPH6VaPZ61ZZf97sW/Vdn9LzU5uvQLtvEUyfwd4FHabhohvQXApVS1iNEEtYhGA==",
   "success": true,
-  "projectFilePath": "c:\\ElevenFiftyProjects\\Final\\CustInfo.MVC\\CustInfo.MVC.csproj",
+  "projectFilePath": "C:\\ElevenFiftyProjects\\Final\\CustInfo.MVC\\CustInfo.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\arias\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\arias\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

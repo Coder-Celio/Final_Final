@@ -79,3 +79,5 @@ C:\ElevenFiftyProjects\Final\CustInfo.MVC\bin\Debug\net7.0\CustInfo.Data.pdb
 C:\ElevenFiftyProjects\Final\CustInfo.MVC\bin\Debug\net7.0\CustInfo.Services.pdb
 C:\ElevenFiftyProjects\Final\CustInfo.MVC\bin\Debug\net7.0\CustInfo.Models.pdb
 C:\ElevenFiftyProjects\Final\CustInfo.MVC\obj\Debug\net7.0\CustInfo.MVC.csproj.CopyComplete
+C:\ElevenFiftyProjects\Final\CustInfo.MVC\bin\Debug\net7.0\AutoMapper.dll
+C:\ElevenFiftyProjects\Final\CustInfo.MVC\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -3282,11 +3282,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\ElevenFiftyProjects\\Final\\CustInfo.Services\\CustInfo.Services.csproj",
+      "projectUniqueName": "C:\\ElevenFiftyProjects\\Final\\CustInfo.Services\\CustInfo.Services.csproj",
       "projectName": "CustInfo.Services",
-      "projectPath": "c:\\ElevenFiftyProjects\\Final\\CustInfo.Services\\CustInfo.Services.csproj",
+      "projectPath": "C:\\ElevenFiftyProjects\\Final\\CustInfo.Services\\CustInfo.Services.csproj",
       "packagesPath": "C:\\Users\\arias\\.nuget\\packages\\",
-      "outputPath": "c:\\ElevenFiftyProjects\\Final\\CustInfo.Services\\obj\\",
+      "outputPath": "C:\\ElevenFiftyProjects\\Final\\CustInfo.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3308,11 +3308,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\ElevenFiftyProjects\\Final\\CustInfo.Data\\CustInfo.Data.csproj": {
-              "projectPath": "c:\\ElevenFiftyProjects\\Final\\CustInfo.Data\\CustInfo.Data.csproj"
+            "C:\\ElevenFiftyProjects\\Final\\CustInfo.Data\\CustInfo.Data.csproj": {
+              "projectPath": "C:\\ElevenFiftyProjects\\Final\\CustInfo.Data\\CustInfo.Data.csproj"
             },
-            "c:\\ElevenFiftyProjects\\Final\\CustInfo.Models\\CustInfo.Models.csproj": {
-              "projectPath": "c:\\ElevenFiftyProjects\\Final\\CustInfo.Models\\CustInfo.Models.csproj"
+            "C:\\ElevenFiftyProjects\\Final\\CustInfo.Models\\CustInfo.Models.csproj": {
+              "projectPath": "C:\\ElevenFiftyProjects\\Final\\CustInfo.Models\\CustInfo.Models.csproj"
             }
           }
         }
